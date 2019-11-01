@@ -3,11 +3,13 @@
 }
 
 body {
-	font-family: 'Google Sans', sans-serif;
+	font-family: 'Red Hat Text', sans-serif;
 	color: #555;
 	margin: 0;
 }
-
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Google Sans', sans-serif;
+}
 header,section {
 	background: white;
 	border-bottom: 1px solid #eee;
@@ -235,6 +237,7 @@ section#team p {
 	font-size: 0.8rem;
 	font-weight: normal;
 	color: #555;
+	font-family: 'Red Hat Text', sans-serif;
 }
 
 a.button {
