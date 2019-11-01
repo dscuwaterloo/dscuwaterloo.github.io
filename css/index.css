@@ -1,0 +1,411 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Google Sans', sans-serif;
+	color: #555;
+	margin: 0;
+}
+
+header,section {
+	background: white;
+	border-bottom: 1px solid #eee;
+	overflow: hidden;
+	position: relative;
+}
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+header .section-container {
+	max-width: 60rem;
+	width: 95%;
+	width: calc(100% - 2rem);
+	margin: 0 auto;
+	padding: 3rem 0;
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-direction: column;
+	flex: 1;
+}
+header .header-background {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 33.33%;
+	width: calc(50% - 8rem);
+	height: 100%;
+	background-image: url('../img/photos/interview.jpg');
+	background-size: cover;
+	background-position: center 10%;
+}
+header .header-background:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -25%;
+	width: 40%;
+	height: 101%;
+	transform: skew(-5deg);
+	background: white;
+}
+header .topbar {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	z-index: 4;
+}
+
+.dsc-uwaterloo-logo {
+	display: flex;
+	text-align: left;
+	justify-content: center;
+	align-items: center;
+}
+.dsc-uwaterloo-logo h1 {
+	font-size: 1.4rem;
+	margin: 0;
+	color: black;
+	font-weight: normal;
+	overflow: hidden;
+	display: inline-block;
+	line-height: 0.9;
+}
+.dsc-uwaterloo-logo h3 {
+	font-weight: normal;
+	font-size: 0.8rem;
+	margin: 0;
+}
+.dsc-uwaterloo-logo img {
+	height: 4rem;
+	margin-right: 0.66rem;
+}
+
+header .masthead {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 4rem 0;
+}
+header .masthead > * {
+	max-width: 38rem;
+	position: relative;
+	z-index: 4;
+}
+header .masthead h1 {
+	color: #333;
+	font-size: 4rem;
+	line-height: 1;
+	margin: 2rem 0;
+}
+header .masthead p {
+	font-size: 1.1rem;
+	line-height: 1.7;
+	margin: 0 0 2rem;
+	color: #777;
+}
+h5.masthead-info {
+    margin: 0.75rem 0 -0.75rem;
+    text-transform: uppercase;
+    background: #555;
+    color: white;
+    padding: 0.5rem 0.66rem;
+    font-size: 0.75rem;
+    border-radius: 0.1rem;
+}
+header .masthead .masthead-bg-icon {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	height: 100vh;
+	line-height: 100vh;
+	pointer-events: none;
+	font-size: 40vw;
+	left: 50%;
+	color: #f5f5f5;
+}
+
+section {
+	position: relative;
+	z-index: 4;
+	display: flex;
+	padding: 4rem;
+	justify-content: center;
+	align-items: center;
+	background: white;
+}
+section.two-piece {
+	padding: 10rem 4rem 6rem;
+}
+section.two-piece .text-container {
+	width: 36rem;
+}
+section.two-piece img {
+	-o-object-fit: contain;
+	object-fit: contain;
+	max-width: 22rem;
+	max-height: 100%;
+}
+section.two-piece .text-container:first-child {
+	margin-right: 2rem;
+}
+section.two-piece img:first-child {
+	margin-right: 4rem;
+	max-width: 18rem;
+}
+section h1 {
+	font-size: 3.6rem;
+	line-height: 1;
+	position: relative;
+	color: #333;
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+}
+section i.title-bg-icon {
+	position: absolute;
+	opacity: 0.1;
+	color: #024;
+	z-index: -1;
+	font-size: 8rem;
+	top: -5rem;
+	left: -3rem;
+}
+section p {
+	line-height: 1.7;
+	margin-bottom: 2rem;
+	color: #777;
+}
+
+section#team {
+	text-align: center;
+}
+
+section#team h1,
+section#team p {
+	max-width: 40rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.team-members {
+	width: 95%;
+	width: calc(100% - 2rem);
+	max-width: 45rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+	flex-wrap: wrap;
+	padding: 0.5rem 0;
+	margin: auto;
+}
+
+.team-member {
+	width: 100%;
+	max-width: 13rem;
+	margin: 1rem 0.5rem;
+	border-radius: 0.25rem;
+	background: white;
+}
+.team-member img {
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+}
+.team-member .member-text {
+	padding: 1rem;
+}
+.team-member h3 {
+	margin: 0 0 0.5rem;
+	font-size: 1.2rem;
+	font-weight: normal;
+	color: #333;
+}
+.team-member h4 {
+	margin: 0;
+	font-size: 0.8rem;
+	font-weight: normal;
+	color: #555;
+}
+
+a.button {
+	background: #4285f4;
+	box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1rem 1.25rem;
+	border-radius: 0.2rem;
+	text-transform: uppercase;
+	font-size: 0.85rem;
+	margin-right: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+section#join {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+}
+
+section#join > * {
+	width: 95%;
+	width: calc(100% - 2rem);
+}
+
+section#join iframe {
+	margin: auto;
+}
+
+footer {
+    font-size:  0.8rem;
+    text-align: center;
+	padding: 3rem 1rem;
+	line-height: 1.7;
+    position: relative;
+    z-index: 5;
+}
+
+footer:before {
+    content: '';
+    width: 100%;
+    height: 0.25rem;
+    top: -1px;
+    left: 0;
+    background: linear-gradient(to right, #4285F4 25%, #EA4335 25% 50%, #FBBC04 50% 75%, #34A853 75% 100%);
+    position: absolute;
+}
+
+@-webkit-keyframes blink {
+	0% {
+		opacity: 0;
+	}
+	49% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes blink {
+	0% {
+		opacity: 0;
+	}
+	49% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media(max-width: 1024px) {
+	header {
+		padding-bottom: 18rem;
+	}
+	
+	header .header-background {
+		top: auto;
+		bottom: 0;
+		width: 100%;
+		height: 24rem;
+	}
+	
+	header .header-background:before {
+		transform: skewY(-5deg);
+		width: 101%;
+		height: 30%;
+		top: -15%;
+		left: 0;
+	}
+	
+	header .masthead {
+		width: 95%;
+		width: calc(100% - 2rem);
+		max-width: 38rem;
+		margin: auto;
+	}
+	
+	header .topbar {
+		width: 95%;
+		width: calc(100% - 2rem);
+		max-width: 38rem;
+		margin: auto;
+	}
+}
+
+@media(max-width: 900px) {
+	section {
+		padding: 3rem 4rem;
+	}
+
+	section.two-piece {
+		flex-direction: column;
+		padding: 3rem 4rem;
+	}
+	
+	section.two-piece img {
+		max-width: 18rem;
+		margin-bottom: 3rem;
+		order: 1;
+	}
+	
+	section.two-piece img:first-child {
+		margin-right: 0;
+	}
+	
+	section.two-piece .text-container {
+		order: 2;
+		max-width: 36rem;
+		width: 100%;
+	}
+	
+	section.two-piece .text-container:first-child {
+		margin-right: 0;
+	}
+	
+	section.two-piece h1 {
+		font-size: 3rem;
+	}
+	
+	section.two-piece i.title-bg-icon {
+		font-size: 6rem;
+		top: -3.75rem;
+		left: -2.25rem;
+	}
+}
+
+@media(max-width: 330px) {
+	header .masthead h1 {
+		font-size: 3rem;
+	}
+}
+
+@media(min-width: 1600px) {
+	html {
+		font-size: 18px;
+	}
+}
+@media(min-width: 1800px) {
+	html {
+		font-size: 20px;
+	}
+}
