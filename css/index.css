@@ -45,7 +45,6 @@ header .header-background {
 	width: 33.33%;
 	width: calc(50% - 8rem);
 	height: 100%;
-	background-image: url('../img/photos/interview.jpg');
 	background-size: cover;
 	background-position: center 10%;
 }
@@ -58,6 +57,14 @@ header .header-background:before {
 	height: 101%;
 	transform: skew(-5deg);
 	background: white;
+}
+header.second-event .header-background {
+	right: auto;
+	left: 0;
+}
+header.second-event .header-background:before {
+	left: auto;
+	right: -25%;
 }
 header .topbar {
 	width: 100%;
@@ -104,6 +111,10 @@ header .masthead > * {
 	max-width: 38rem;
 	position: relative;
 	z-index: 4;
+}
+header.second-event .masthead {
+	align-items: flex-end;
+	text-align: right;
 }
 header .masthead h1 {
 	color: #333;
