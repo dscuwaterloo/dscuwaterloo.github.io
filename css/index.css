@@ -345,6 +345,15 @@ footer:before {
 		width: 100%;
 		height: 24rem;
 	}
+
+	header.second-event .header-background {
+		left: auto;
+		right: 0;
+	}
+	header.second-event .header-background:before {
+		right: auto;
+		left: 0;
+	}
 	
 	header .header-background:before {
 		transform: skewY(-5deg);
@@ -359,6 +368,15 @@ footer:before {
 		width: calc(100% - 2rem);
 		max-width: 38rem;
 		margin: auto;
+	}
+
+	header .masthead h1 {
+		font-size: 3.2rem;
+	}
+
+	header.second-event .masthead {
+		align-items: flex-start;
+		text-align: left;
 	}
 	
 	header .topbar {
