@@ -211,6 +211,17 @@ section#team p {
 	margin-right: auto;
 }
 
+section#alumni h2,
+section#alumni p {
+	max-width: 40rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alumni {
+	margin-top: 5rem;
+}
+
 .team-members {
 	width: 95%;
 	width: calc(100% - 2rem);
